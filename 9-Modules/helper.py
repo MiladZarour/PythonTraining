@@ -6,7 +6,7 @@ def days_to_units(num_of_days, conversion_unit):
     else:
         return "unsupported unit"
 
-def validate_and_excute():
+def validate_and_excute(days_and_unit_dictionary):
     try:
 
         user_input_number = int(days_and_unit_dictionary["days"])  
