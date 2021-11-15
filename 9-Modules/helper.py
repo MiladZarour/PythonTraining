@@ -20,3 +20,6 @@ def validate_and_excute(days_and_unit_dictionary):
 
     except ValueError:
         print("your input is not a number. Don't ruin my programe!")
+
+
+user_input_message = "Hej user, enter a number of days and conversion unity:\n"
