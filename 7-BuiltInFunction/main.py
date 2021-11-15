@@ -45,3 +45,9 @@ while user_input != "exit":
     # converting user_input to list, and with split(",") we can write 10, 30, 50
     for num_of_days_element in set(user_input.split(", ")):
         validate_and_excute()
+
+
+print()  # print to the terminal
+input()  # ask the user to enter
+set()  # return new set
+int()  # Casting to
