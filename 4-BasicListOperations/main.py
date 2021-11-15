@@ -1,6 +1,8 @@
 msg = "Hello"
 print(msg)
 
+# writing comments
+
 print(type("this should be a string type"))
 print(type(123.4))
 print(type(23))
