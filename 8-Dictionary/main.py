@@ -45,12 +45,3 @@ while user_input != "exit":
     # converting user_input to list, and with split(",") we can write 10, 30, 50
     for num_of_days_element in set(user_input.split(", ")):
         validate_and_excute()
-
-
-print("some text")  # print to the terminal
-input("Enter value")  # ask the user to enter
-set([1, 2, 3, 4])  # return new set
-int("20")  # Casting to
-"2, 3".split()
-"text".split()
-[1, 2, 3, 4].count()
