@@ -33,15 +33,7 @@ def validate_and_excute():
 
 user_input = ""
 while user_input != "exit":
-    user_input = input(
-        "Hej user, enter a number of days as a comma separated list and I will convert it to hours:\n")
-    list_of_days = user_input.split(", ")
-    print(list_of_days)
-    print(set(list_of_days))
-
-    print(type(list_of_days))
-    print(type(set(list_of_days)))
-
-    # converting user_input to list, and with split(",") we can write 10, 30, 50
-    for num_of_days_element in set(user_input.split(", ")):
-        validate_and_excute()
+    user_input = input("Hej user, enter a number of days and conversion unity:\n")
+    days_and_unit = user_input.split(":")
+    print(days_and_unit)
+    {"days": 20,"unit": "hours"}
