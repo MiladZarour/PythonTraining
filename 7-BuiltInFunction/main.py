@@ -47,7 +47,10 @@ while user_input != "exit":
         validate_and_excute()
 
 
-print()  # print to the terminal
-input()  # ask the user to enter
-set()  # return new set
-int()  # Casting to
+print("some text")  # print to the terminal
+input("Enter value")  # ask the user to enter
+set([1, 2, 3, 4])  # return new set
+int("20")  # Casting to
+"2, 3".split()
+"text".split()
+[1, 2, 3, 4].count()
