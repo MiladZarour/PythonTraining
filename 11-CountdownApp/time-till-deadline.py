@@ -5,4 +5,9 @@ input_list = user_input.split(":")
 
 goal = input_list[0]
 deadline = input_list[1]
+
+deadline_dat = datetime.datetime.strptime(deadline, "%d.%m.%Y") #12.07.21
+print(datetime.datetime.strptime(deadline, "%d.%m.%Y")) #12.07.21
+print(type(datetime.datetime.strptime(deadline, "%d.%m.%Y")))
+
 print(input_list)
