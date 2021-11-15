@@ -1,2 +1,2 @@
 my_list = ["January", "February", "March"]
-my_list[0]
+print(my_list[2])  # getting specific value
