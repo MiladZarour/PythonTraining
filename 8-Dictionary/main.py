@@ -1,12 +1,3 @@
-msg = "Hello"
-print(msg)
-
-# writing comments
-
-print(type("this should be a string type"))
-print(type(123.4))
-print(type(23))
-
 calculation_to_units = 24
 name_of_unit = "hours"
 
@@ -18,7 +9,7 @@ def days_to_units(num_of_days):
 def validate_and_excute():
     try:
 
-        user_input_number = int(num_of_days_element)  # Casting into a int
+        user_input_number = int(days_and_unit_dictionary["days"])  
         if user_input_number > 0:
             calculated_value = days_to_units(user_input_number)
             print(calculated_value)
@@ -31,9 +22,21 @@ def validate_and_excute():
         print("your input is not a number. Don't ruin my programe!")
 
 
-user_input = ""
-while user_input != "exit":
-    user_input = input("Hej user, enter a number of days and conversion unity:\n")
-    days_and_unit = user_input.split(":")
-    print(days_and_unit)
-    {"days": 20,"unit": "hours"}
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input("Hej user, enter a number of days and conversion unity:\n")
+#     days_and_unit = user_input.split(":")
+#     print(days_and_unit)
+#     days_and_unit_dictionary = {"days": days_and_unit[0],"unit": days_and_unit[1]}
+#     print(days_and_unit_dictionary)
+#     validate_and_excute()
+
+
+my_list = ["20", "30", "100"]
+print(my_list[1])
+print(my_list[2])
+
+my_dictionary = {"days" : 20, "unit":"hours", "message": "all good"}
+print(my_dictionary["days"])
+print(my_dictionary["unit"])
+print(my_dictionary["message"])
