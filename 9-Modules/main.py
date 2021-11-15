@@ -1,4 +1,5 @@
 from helper import validate_and_excute, user_input_message
+from helper import * # it's a waste if just we need to import a little
 
 user_input = ""
 while user_input != "exit":
