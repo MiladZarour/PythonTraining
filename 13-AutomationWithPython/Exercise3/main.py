@@ -5,7 +5,7 @@ product_list = inv_file["Sheet1"]
 
 products_per_supplier = {}
 total_value_per_supplier = {}
-products_under_10_unv = {}
+products_under_10_inv = {}
 
 for product_row in range(2, product_list.max_row + 1):
     #print(product_list.cell(product_row, 4))
@@ -33,4 +33,5 @@ print(products_per_supplier)
 print(total_value_per_supplier)
 
 # logic productis with inventory less than 10
-products_under_10_unv[product_num] = inventory
+if inventory < 10:
+    products_under_10_inv[product_num] = inventory
