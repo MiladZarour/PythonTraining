@@ -1,6 +1,3 @@
-from _typeshed import Self
-
-
 class User:
 
     def __init__(self, email, name, passowrd, current_job_title):
@@ -12,7 +9,7 @@ class User:
     def change_password(self, new_password):
         self.password = new_password
 
-    def current_job_title(self, new_job_title):
+    def change_job_title(self, new_job_title):
         self.current_job_title = new_job_title
 
     def get_user_info(self):
@@ -22,3 +19,7 @@ class User:
 
 app_user_one = User("nn@nn.com", "Nana Janashia", "pwd1", "DecOps Engineer")
 app_user_one.get_user_info()
+
+
+app_user_two = User("aa@aa.com", "James Bond", "SuperSecret", "Agent")
+app_user_two.get_user_info()
