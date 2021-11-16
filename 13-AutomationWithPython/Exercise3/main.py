@@ -33,3 +33,4 @@ print(products_per_supplier)
 print(total_value_per_supplier)
 
 # logic productis with inventory less than 10
+products_under_10_unv[product_num] = inventory
