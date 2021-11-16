@@ -5,6 +5,7 @@ product_list = inv_file["Sheet1"]
 
 products_per_supplier = {}
 total_value_per_supplier = {}
+products_under_10_unv = {}
 
 for product_row in range(2, product_list.max_row + 1):
     #print(product_list.cell(product_row, 4))
