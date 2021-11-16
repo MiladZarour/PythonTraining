@@ -12,6 +12,7 @@ for product_row in range(2, product_list.max_row + 1):
     supplier_name = product_list.cell(product_row, 4).value
     inventory = product_list.cell(product_row, 2).value
     price = product_list.cell(product_row, 3).value
+    product_num = product_list.cell(product_row, 1).value
 
     # calculation number of products per supplier
     if supplier_name in products_per_supplier:
