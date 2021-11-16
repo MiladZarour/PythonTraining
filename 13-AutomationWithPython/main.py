@@ -19,8 +19,6 @@ for product_row in range(2, product_list.max_row + 1):
     else:
         products_per_supplier[supplier_name] = 1
 
+    # calculation total of inventory per supplier value per supplier
 
-# calculation total of inventory per supplier value per supplier
-
-
-total_value_per_supplier[supplier_name] = inventory * price
+    total_value_per_supplier[supplier_name] = inventory * price
