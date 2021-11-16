@@ -35,3 +35,5 @@ print(total_value_per_supplier)
 # logic productis with inventory less than 10
 if inventory < 10:
     products_under_10_inv[product_num] = inventory
+
+print(products_under_10_inv)
