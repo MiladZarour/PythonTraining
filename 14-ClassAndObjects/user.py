@@ -1,19 +1,15 @@
 class User:
 
+    email
+    name
+    password
+    current_job_title
 
-email = "nn@nn.com"
-name = "Nana Janashia"
-password = "pwd"
-current_job_title = "DevOps Engineer"
+    def change_password():
+        # do smth
 
+    def current_job_title():
+        # do smth
 
-def change_password():
-    # do smth
-
-
-def current_job_title():
-    # do smth
-
-
-def add_new_skill():
-    # do smth
+    def add_new_skill():
+        # do smth
