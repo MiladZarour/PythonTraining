@@ -4,10 +4,13 @@ inv_file = openpyxl.load_workbook("inventory.xlsx")
 product_list = inv_file["Sheet1"]
 
 products_per_supplier = {}
+total_value_per_supplier = {}
 
 for product_row in range(2, product_list.max_row + 1):
     #print(product_list.cell(product_row, 4))
     supplier_name = product_list.cell(product_row, 4).value
+    inventory = product_list.cell(product_row, 2).value
+    price = product_list.cell(product_row, 3).value
 
     # calculation number of products per supplier
     if supplier_name in products_per_supplier:
@@ -18,3 +21,6 @@ for product_row in range(2, product_list.max_row + 1):
 
 
 # calculation total of inventory per supplier value per supplier
+
+
+total_value_per_supplier[supplier_name] = inventory * price
