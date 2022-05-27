@@ -18,10 +18,14 @@ x.printname()
 
 
 class Student(Person):
-    def __init__(self, fname, lname):
+    def __init__(self, fname, lname, year):
         # Python also has a super() function that will make the child class inherit all the methods and properties from its parent:
         super().__init__(fname, lname)
+        # Add Properties
+        # Add a year parameter, and pass the correct year when creating objects:
+        self.graduationyear = year
 
 
-x = Student("Mike", "Olsen")
-x.printname()
+x = Student("Mike", "Olsen", 2019)
+# x.printname()
+# print(x.graduationyear)
